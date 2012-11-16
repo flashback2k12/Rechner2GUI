@@ -72,6 +72,13 @@ public class EingabeGUI extends JFrame {
 				
 				GlobalVariable.gloVar.setZahl1(Double.parseDouble(txtZahl1.getText()));
 				GlobalVariable.gloVar.setZahl2(Double.parseDouble(txtZahl2.getText()));
+
+                                    /*
+                                    * Versuch gleichzeitig Datenuebergabe + GUI Wechsel
+                                    */
+
+                                    AusgabeGUI ag = new AusgabeGUI();
+				ag.setVisible(true); 
 				
 			}
 		});
@@ -82,8 +89,8 @@ public class EingabeGUI extends JFrame {
 		btnWeiter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				AusgabeGUI ag = new AusgabeGUI();
-				ag.setVisible(true); 
+//				AusgabeGUI ag = new AusgabeGUI();
+//				ag.setVisible(true); 
 				
 			}
 		});
