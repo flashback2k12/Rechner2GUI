@@ -49,6 +49,12 @@ public class AusgabeGUI extends JFrame {
 		lblErgebnis.setBounds(10, 41, 189, 14);
 		contentPane.add(lblErgebnis);
 		
+          /*
+          * Daten aus "Zwischenspeicher" holen und Additionsrechenoperation durchführen 
+          *
+          * Rename Button = Addieren
+          */
+
 		JButton btnDatenholen = new JButton("DatenHolen");
 		btnDatenholen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -65,7 +71,7 @@ public class AusgabeGUI extends JFrame {
 		btnDatenholen.setBounds(10, 77, 189, 23);
 		contentPane.add(btnDatenholen);
 		
-		JButton btnZurck = new JButton("Zur\u00FCck");
+		JButton btnZurck = new JButton("Zurueck");
 		btnZurck.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -76,6 +82,80 @@ public class AusgabeGUI extends JFrame {
 		});
 		btnZurck.setBounds(209, 77, 189, 23);
 		contentPane.add(btnZurck);
-	}
+	
+
+          /*
+          * Daten aus "Zwischenspeicher" holen und Rechenoperation durchführen 
+          *
+          * Initalisierung Button noch durchführen bzw. Position anpassen
+          
+
+		JButton btnDatenholen = new JButton("Subtrahieren");
+		btnDatenholen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				double zahl1, zahl2;
+				
+				zahl1 = GlobalVariable.gloVar.getZahl1();
+				zahl2 = GlobalVariable.gloVar.getZahl2();
+				
+				lblErgebnis.setText("Ergebnis: " + CalcOperator.sub2(zahl1, zahl2)); 
+				
+			}
+		});
+		btnDatenholen.setBounds(10, 77, 189, 23);
+		contentPane.add(btnDatenholen);
+
+           */
+
+          /*
+          * Daten aus "Zwischenspeicher" holen und Rechenoperation durchführen 
+          *
+          * Initalisierung Button noch durchführen bzw. Position anpassen
+          
+
+		JButton btnDatenholen = new JButton("Multiplizieren");
+		btnDatenholen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				double zahl1, zahl2;
+				
+				zahl1 = GlobalVariable.gloVar.getZahl1();
+				zahl2 = GlobalVariable.gloVar.getZahl2();
+				
+				lblErgebnis.setText("Ergebnis: " + CalcOperator.mul2(zahl1, zahl2)); 
+				
+			}
+		});
+		btnDatenholen.setBounds(10, 77, 189, 23);
+		contentPane.add(btnDatenholen);
+
+           */
+
+          /*
+          * Daten aus "Zwischenspeicher" holen und Rechenoperation durchführen 
+          *
+          * Initalisierung Button noch durchführen bzw. Position anpassen
+          
+
+		JButton btnDatenholen = new JButton("Dividieren");
+		btnDatenholen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				double zahl1, zahl2;
+				
+				zahl1 = GlobalVariable.gloVar.getZahl1();
+				zahl2 = GlobalVariable.gloVar.getZahl2();
+				
+				lblErgebnis.setText("Ergebnis: " + CalcOperator.div2(zahl1, zahl2)); 
+				
+			}
+		});
+		btnDatenholen.setBounds(10, 77, 189, 23);
+		contentPane.add(btnDatenholen);
+
+           */
+
+     }
 
 }
